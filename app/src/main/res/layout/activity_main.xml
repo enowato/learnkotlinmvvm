@@ -5,15 +5,19 @@
     <data>
         <variable
             name="main"
-            type="com.example.eno.cobamvvm.viewmodels.MainViewModel"/>
+            type="com.example.eno.cobamvvm.menu.viewmodels.MainViewModel"/>
     </data>
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/layoutMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewPlace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-    </LinearLayout>
+            tools:listitem="@layout/item_place"/>
+
+    </RelativeLayout>
 
 </layout>

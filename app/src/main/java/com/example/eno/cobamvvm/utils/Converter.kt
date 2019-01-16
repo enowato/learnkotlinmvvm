@@ -6,7 +6,7 @@ import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.request.RequestOptions
 import com.example.eno.cobamvvm.R
 
-class converter {
+class Converter {
     companion object {
         @JvmStatic
         @BindingAdapter("loadImage")
@@ -14,8 +14,8 @@ class converter {
             Glide.with(imageView.context)
                     .load(url)
                     .apply(RequestOptions()
-                            .placeholder(R.drawable.sample_image)
-                            .error(R.drawable.sample_image)
+                            .placeholder(R.drawable.gitkraken)
+                            .error(R.drawable.gitkraken)
                             .format(DecodeFormat.PREFER_ARGB_8888))
                     .into(imageView)
         }
